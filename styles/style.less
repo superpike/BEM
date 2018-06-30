@@ -1,0 +1,288 @@
+@import "_variables";
+@import "_mixins";
+
+html {
+    font-size: 62.5%;
+    font-family: @fontFamily;
+}
+
+.b-container {
+    width: 100rem;
+    margin: 0 auto;
+    //padding: 3rem 2rem;
+    border-top: 3rem solid @borderColor;
+    border-left: 2rem solid @borderColor;
+    border-bottom: 3rem solid @borderColor;
+    border-right: 2rem solid @borderColor;
+}
+.b-header {
+    height: 14rem;
+    border-top: .5rem solid @greenColor;
+    position: relative;
+}
+.b-logo {
+    &__header {
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 2.6rem;
+        left: 3rem;
+        &::first-letter {
+            font-size: 4.6rem;
+        }
+    }
+    &__content {
+        font-size: 1.2rem;
+        color: @grayColor;
+        position: absolute;
+        top: 8.5rem;
+        left: 3rem;
+    }
+}
+.b-socialButtons {
+    width: 25rem;
+    height: 5rem;
+    background-color: @greenColor;
+    font-size: 1.6rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    &__socialButton {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height: 3.3rem;
+        text-decoration: none;
+        color: @whiteColor;
+        background-color: @blackColor;
+        border-radius: 100rem;
+        text-align: center;
+        &:hover {
+            background-color: @blueColor;
+        }
+    }
+}
+.b-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: @greenColor;
+    display: flex;
+    justify-content: space-around;
+    width: 25.5rem;
+    height: 1.4rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    position: absolute;
+    top: 8.5rem;
+    right: 3rem;
+    &__link {
+        display: block;
+        border-left: .1rem solid @greenColor;
+        padding-left: .5rem;
+        &:nth-child(1) {
+            border: none;
+            padding: 0;
+        }
+    }
+}
+.b-menu {
+    height: 7rem;
+    color: @whiteColor;
+    background-color: @greenColor;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 28rem;
+    align-items: center;
+}
+.b-nav {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    &__item:hover {
+        color: @blackColor;
+        cursor: pointer;
+    }
+}
+.b-searchForm {
+    display: grid;
+    grid-template-columns: 21.5rem 6.5rem;
+    &__searchText {
+        width: 21.5rem;
+        height: 3rem;
+        border: none;
+        outline: none;
+        padding: 0 0 0 1rem;
+        box-sizing: border-box;
+    }
+    &__btn {
+        width: 6.5rem;
+        height: 3rem;
+        box-sizing: border-box;
+        border: none;
+        border-left: .1rem solid @grayColor;
+        color: @greenColor;
+        background-color: @whiteColor;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.b-main {
+    padding: 3rem;
+}
+.b-carusel {
+    border-bottom: .1rem solid @grayBorder;
+    height: 48rem;
+    box-sizing: border-box;
+    &__blockWithCurrentPicture {
+        border: .1rem solid @grayBorder;
+        box-sizing: border-box;
+        padding: .9rem;
+        width: 89.8rem;
+        height: 37.8rem;
+        margin: 0 auto;
+    }
+    &__currentPicture {
+        display: block;
+        max-width: 88rem;
+        max-height: 36rem;
+        margin: 0 auto;
+    }
+    &__navButtons {
+        list-style: none;
+        padding: 0;
+        margin: 2rem 40rem 0;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    &__navButton {
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: @blackColor;
+        border-radius: 400rem;
+        &_active {
+            background-color: @whiteColor;
+            border: .1rem solid @blackColor;
+        }
+        &:first-child,
+        &:last-child {
+            .mixinBigNavButton;
+        }
+    }
+}
+
+
+
+.b-footer {
+    height: 31rem;
+}
+.b-footerInfo {
+    height: 25rem;
+    background-color: @footerInfoBgColor;
+    color: @grayColor;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    &__header {
+        font-size: 1.3rem;
+        color: @footerInfoHeaderColor;
+        text-transform: uppercase;
+        //text-align: center;
+        padding: 3rem 0;
+        margin: 0;
+    }
+}
+.b-contacts {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    &__text {
+        padding-bottom: 3rem;
+    }
+}
+.b-quickLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    &__quickLink {
+        border-bottom: .1rem solid @grayColor;
+        box-sizing: border-box;
+    }
+}
+.b-linkDecor {
+    text-decoration: none;
+    color: inherit;
+}
+.b-blog {
+    &__title {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        padding-bottom: .7rem;
+    }
+    &__author {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        padding-bottom: 1rem;
+    }
+    &__content {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+    &__readMore {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: @greenColor;
+        text-align: right;
+        margin-top: .7rem;
+    }
+}
+.b-submitForm {
+    &__name {
+        .mixinSubmitInput;
+    }
+    &__email {
+        .mixinSubmitInput;
+    }
+    &__btn {
+        background-color: @submitBgColor;
+        color: @greenColor;
+        width: 8rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        border: 0;
+        outline: none;
+        border-radius: .5rem;
+        font-size: 1.3rem;
+    }
+}
+.b-copyrights {
+    background-color: @copyrightBgColor;
+    color: @grayColor;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 15.5rem;
+    align-items: center;
+    padding: 0 3rem;
+    font-size: 1.2rem;
+}

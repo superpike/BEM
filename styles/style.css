@@ -1,0 +1,320 @@
+.mixinSubmitInput {
+  background-color: #1f1f1f;
+  color: #999999;
+  width: 21rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  border-radius: .5rem;
+}
+.mixinBigNavButton {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+}
+html {
+  font-size: 62.5%;
+  font-family: Georgia, san-serif;
+}
+.b-container {
+  width: 100rem;
+  margin: 0 auto;
+  border-top: 3rem solid #1f1f1f;
+  border-left: 2rem solid #1f1f1f;
+  border-bottom: 3rem solid #1f1f1f;
+  border-right: 2rem solid #1f1f1f;
+}
+.b-header {
+  height: 14rem;
+  border-top: 0.5rem solid #81b300;
+  position: relative;
+}
+.b-logo__header {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2.6rem;
+  left: 3rem;
+}
+.b-logo__header::first-letter {
+  font-size: 4.6rem;
+}
+.b-logo__content {
+  font-size: 1.2rem;
+  color: #999999;
+  position: absolute;
+  top: 8.5rem;
+  left: 3rem;
+}
+.b-socialButtons {
+  width: 25rem;
+  height: 5rem;
+  background-color: #81b300;
+  font-size: 1.6rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 0;
+  right: 3rem;
+}
+.b-socialButtons__socialButton {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 100rem;
+  text-align: center;
+}
+.b-socialButtons__socialButton:hover {
+  background-color: #00acee;
+}
+.b-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #81b300;
+  display: flex;
+  justify-content: space-around;
+  width: 25.5rem;
+  height: 1.4rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  position: absolute;
+  top: 8.5rem;
+  right: 3rem;
+}
+.b-links__link {
+  display: block;
+  border-left: 0.1rem solid #81b300;
+  padding-left: .5rem;
+}
+.b-links__link:nth-child(1) {
+  border: none;
+  padding: 0;
+}
+.b-menu {
+  height: 7rem;
+  color: #ffffff;
+  background-color: #81b300;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 28rem;
+  align-items: center;
+}
+.b-nav {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.b-nav__item:hover {
+  color: #333333;
+  cursor: pointer;
+}
+.b-searchForm {
+  display: grid;
+  grid-template-columns: 21.5rem 6.5rem;
+}
+.b-searchForm__searchText {
+  width: 21.5rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: 0 0 0 1rem;
+  box-sizing: border-box;
+}
+.b-searchForm__btn {
+  width: 6.5rem;
+  height: 3rem;
+  box-sizing: border-box;
+  border: none;
+  border-left: 0.1rem solid #999999;
+  color: #81b300;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.b-main {
+  padding: 3rem;
+}
+.b-carusel {
+  border-bottom: 0.1rem solid #e2e2e2;
+  height: 48rem;
+  box-sizing: border-box;
+}
+.b-carusel__blockWithCurrentPicture {
+  border: 0.1rem solid #e2e2e2;
+  box-sizing: border-box;
+  padding: .9rem;
+  width: 89.8rem;
+  height: 37.8rem;
+  margin: 0 auto;
+}
+.b-carusel__currentPicture {
+  display: block;
+  max-width: 88rem;
+  max-height: 36rem;
+  margin: 0 auto;
+}
+.b-carusel__navButtons {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 40rem 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.b-carusel__navButton {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #333333;
+  border-radius: 400rem;
+}
+.b-carusel__navButton_active {
+  background-color: #ffffff;
+  border: 0.1rem solid #333333;
+}
+.b-carusel__navButton:first-child,
+.b-carusel__navButton:last-child {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+}
+.b-footer {
+  height: 31rem;
+}
+.b-footerInfo {
+  height: 25rem;
+  background-color: #3b3b3b;
+  color: #999999;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+.b-footerInfo__header {
+  font-size: 1.3rem;
+  color: #666666;
+  text-transform: uppercase;
+  padding: 3rem 0;
+  margin: 0;
+}
+.b-contacts {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.b-contacts__text {
+  padding-bottom: 3rem;
+}
+.b-quickLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 3rem;
+  font-size: 1.2rem;
+}
+.b-quickLinks__quickLink {
+  border-bottom: 0.1rem solid #999999;
+  box-sizing: border-box;
+}
+.b-linkDecor {
+  text-decoration: none;
+  color: inherit;
+}
+.b-blog__title {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  padding-bottom: .7rem;
+}
+.b-blog__author {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  padding-bottom: 1rem;
+}
+.b-blog__content {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+.b-blog__readMore {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #81b300;
+  text-align: right;
+  margin-top: .7rem;
+}
+.b-submitForm__name {
+  background-color: #1f1f1f;
+  color: #999999;
+  width: 21rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  border-radius: .5rem;
+}
+.b-submitForm__email {
+  background-color: #1f1f1f;
+  color: #999999;
+  width: 21rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  border-radius: .5rem;
+}
+.b-submitForm__btn {
+  background-color: #1f1f1f;
+  color: #81b300;
+  width: 8rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+}
+.b-copyrights {
+  background-color: #2e2e2e;
+  color: #999999;
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 15.5rem;
+  align-items: center;
+  padding: 0 3rem;
+  font-size: 1.2rem;
+}
