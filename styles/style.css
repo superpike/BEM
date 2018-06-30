@@ -27,6 +27,10 @@
   text-align: right;
   margin-top: .7rem;
 }
+.readMore:hover {
+  color: #a6e600;
+  cursor: pointer;
+}
 html {
   font-size: 62.5%;
   font-family: Georgia, Arial, san-serif;
@@ -289,6 +293,10 @@ html {
   text-align: right;
   margin-top: .7rem;
 }
+.b-projectBlock__readMore:hover {
+  color: #a6e600;
+  cursor: pointer;
+}
 .b-footer {
   height: 31rem;
 }
@@ -352,6 +360,10 @@ html {
   color: #81b300;
   text-align: right;
   margin-top: .7rem;
+}
+.b-blog__readMore:hover {
+  color: #a6e600;
+  cursor: pointer;
 }
 .b-submitForm__name {
   background-color: #1f1f1f;
