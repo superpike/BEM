@@ -16,9 +16,9 @@
   height: 2rem;
   color: #ffffff;
   font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: bold;
   text-align: center;
-  line-height: 2rem;
 }
 .readMore {
   font-size: 1.2rem;
@@ -114,6 +114,10 @@ html {
   border: none;
   padding: 0;
 }
+.b-links__link:hover {
+  color: #4a6600;
+  cursor: pointer;
+}
 .b-menu {
   height: 7rem;
   color: #ffffff;
@@ -207,9 +211,9 @@ html {
   height: 2rem;
   color: #ffffff;
   font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: bold;
   text-align: center;
-  line-height: 2rem;
 }
 .b-viva {
   display: grid;
