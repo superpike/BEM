@@ -65,7 +65,6 @@ html {
   width: 25rem;
   height: 5rem;
   background-color: #81b300;
-  font-size: 1.6rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: grid;
@@ -80,6 +79,7 @@ html {
   display: block;
   width: 3.2rem;
   height: 3.2rem;
+  font-size: 1.6rem;
   line-height: 3.3rem;
   text-decoration: none;
   color: #ffffff;
@@ -152,7 +152,7 @@ html {
   height: 3rem;
   box-sizing: border-box;
   border: none;
-  border-left: 0.1rem solid #999999;
+  border-left: 0.1rem solid #e2e2e2;
   color: #81b300;
   background-color: #ffffff;
   text-transform: uppercase;
@@ -172,7 +172,7 @@ html {
   border: 0.1rem solid #e2e2e2;
   box-sizing: border-box;
   padding: .9rem;
-  width: 89.8rem;
+  width: 89.9rem;
   height: 37.8rem;
   margin: 0 auto;
 }
@@ -239,6 +239,7 @@ html {
   line-height: 2.2rem;
   color: #81b300;
   margin: 2rem 0;
+  font-weight: 100;
 }
 .b-vivaBlock__content {
   font-size: 1.3rem;
@@ -271,6 +272,7 @@ html {
   font-size: 1.4rem;
   line-height: 1.7rem;
   margin: 0 0 1.4rem 0;
+  font-weight: 100;
 }
 .b-projectBlock__content {
   font-size: 1.3rem;
@@ -314,8 +316,8 @@ html {
   list-style: none;
   padding: 0;
   margin: 0;
-  line-height: 3rem;
   font-size: 1.2rem;
+  line-height: 3rem;
 }
 .b-quickLinks__quickLink {
   border-bottom: 0.1rem solid #999999;
@@ -378,6 +380,7 @@ html {
   color: #81b300;
   width: 8rem;
   height: 3rem;
+  font-size: 1.3rem;
   line-height: 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -385,7 +388,6 @@ html {
   border: 0;
   outline: none;
   border-radius: .5rem;
-  font-size: 1.3rem;
 }
 .b-copyrights {
   background-color: #2e2e2e;

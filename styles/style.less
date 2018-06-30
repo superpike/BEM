@@ -40,10 +40,8 @@ html {
     }
 }
 .b-socialButtons {
-    width: 25rem;
-    height: 5rem;
+    .wh(25rem,5rem);
     background-color: @greenColor;
-    font-size: 1.6rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     display: grid;
@@ -55,9 +53,8 @@ html {
     right: 3rem;
     &__socialButton {
         display: block;
-        width: 3.2rem;
-        height: 3.2rem;
-        line-height: 3.3rem;
+        .wh(3.2rem,3.2rem);
+        .fontLineSize(1.6rem,3.3rem);
         text-decoration: none;
         color: @whiteColor;
         background-color: @blackColor;
@@ -75,8 +72,7 @@ html {
     color: @greenColor;
     display: flex;
     justify-content: space-around;
-    width: 25.5rem;
-    height: 1.4rem;
+    .wh(25.5rem,1.4rem);
     font-size: 1.2rem;
     text-transform: capitalize;
     position: absolute;
@@ -117,19 +113,17 @@ html {
     display: grid;
     grid-template-columns: 21.5rem 6.5rem;
     &__searchText {
-        width: 21.5rem;
-        height: 3rem;
+        .wh(21.5rem,3rem);
         border: none;
         outline: none;
         padding: 0 0 0 1rem;
         box-sizing: border-box;
     }
     &__btn {
-        width: 6.5rem;
-        height: 3rem;
+        .wh(6.5rem,3rem);
         box-sizing: border-box;
         border: none;
-        border-left: .1rem solid @grayColor;
+        border-left: .1rem solid @grayBorder;
         color: @greenColor;
         background-color: @whiteColor;
         text-transform: uppercase;
@@ -150,8 +144,7 @@ html {
         border: .1rem solid @grayBorder;
         box-sizing: border-box;
         padding: .9rem;
-        width: 89.8rem;
-        height: 37.8rem;
+        .wh(89.9rem,37.8rem);
         margin: 0 auto;
     }
     &__currentPicture {
@@ -170,8 +163,7 @@ html {
         align-items: center;
     }
     &__navButton {
-        width: 1.2rem;
-        height: 1.2rem;
+        .wh(1.2rem,1.2rem);
         background-color: @blackColor;
         border-radius: 400rem;
         &_active {
@@ -195,8 +187,7 @@ html {
     box-sizing: border-box;
     padding: 5rem 0;
     &__imageBlock {
-        width: 10rem;
-        height: 8rem;
+        .wh(10rem,8rem);
         margin: 0 auto;
     }
     &__image {
@@ -207,14 +198,13 @@ html {
     }
     &__header {
         text-align: center;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
+        .fontLineSize(1.8rem,2.2rem);
         color: @greenColor;
         margin: 2rem 0;
+        font-weight: 100;
     }
     &__content {
-        font-size: 1.3rem;
-        line-height: 2.1rem;
+        .fontLineSize(1.3rem,2.1rem);
         text-align: center;
     }
 }
@@ -228,8 +218,7 @@ html {
 }
 .b-projectBlock {
     &__imageBlock {
-        width: 21rem;
-        height: 14rem;
+        .wh(21rem,14rem);
         border: .1rem solid @grayBorder;
         padding: .4rem;
         box-sizing: border-box;
@@ -244,6 +233,7 @@ html {
     &__header {
         .fontLineSize(1.4rem,1.7rem);
         margin: 0 0 1.4rem 0;
+        font-weight: 100;
     }
     &__content {
         .fontLineSize(1.3rem,2.1rem);
@@ -275,8 +265,7 @@ html {
     }
 }
 .b-contacts {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    .fontLineSize(1.3rem,2rem);
     &__text {
         padding-bottom: 3rem;
     }
@@ -285,8 +274,7 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 3rem;
-    font-size: 1.2rem;
+    .fontLineSize(1.2rem,3rem);
     &__quickLink {
         border-bottom: .1rem solid @grayColor;
         box-sizing: border-box;
@@ -298,19 +286,16 @@ html {
 }
 .b-blog {
     &__title {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+        .fontLineSize(1.3rem,1.5rem);
         font-weight: bold;
         padding-bottom: .7rem;
     }
     &__author {
-        font-size: 1.1rem;
-        line-height: 1.3rem;
+        .fontLineSize(1.1rem,1.3rem);
         padding-bottom: 1rem;
     }
     &__content {
-        font-size: 1.2rem;
-        line-height: 1.9rem;
+        .fontLineSize(1.2rem,1.9rem);
     }
     &__readMore {
         .readMore;
@@ -326,16 +311,14 @@ html {
     &__btn {
         background-color: @submitBgColor;
         color: @greenColor;
-        width: 8rem;
-        height: 3rem;
-        line-height: 3rem;
+        .wh(8rem,3rem);
+        .fontLineSize(1.3rem,3rem);
         text-align: center;
         text-transform: uppercase;
         box-sizing: border-box;
         border: 0;
         outline: none;
         border-radius: .5rem;
-        font-size: 1.3rem;
     }
 }
 .b-copyrights {
