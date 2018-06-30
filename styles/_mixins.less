@@ -21,3 +21,15 @@
     text-align: center;
     line-height: 2rem;
 }
+
+.fontLineSize(@_font,@_line) {
+    font-size: @_font;
+    line-height: @_line;
+}
+
+.readMore {
+    .fontLineSize(1.2rem,1.4rem);
+    color: @greenColor;
+    text-align: right;
+    margin-top: .7rem;
+}

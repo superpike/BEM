@@ -184,8 +184,74 @@ html {
         }
     }
 }
-
-
+.b-viva {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.7rem;
+    border-bottom: .1rem solid @grayBorder;
+}
+.b-vivaBlock {
+    height: 30rem;
+    box-sizing: border-box;
+    padding: 5rem 0;
+    &__imageBlock {
+        width: 10rem;
+        height: 8rem;
+        margin: 0 auto;
+    }
+    &__image {
+        max-width: 7rem;
+        max-height: 7rem;
+        display: block;
+        margin: 0 auto;
+    }
+    &__header {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: @greenColor;
+        margin: 2rem 0;
+    }
+    &__content {
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+        text-align: center;
+    }
+}
+.b-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.4rem;
+    height: 43rem;
+    padding: 5rem 0;
+    box-sizing: border-box;
+}
+.b-projectBlock {
+    &__imageBlock {
+        width: 21rem;
+        height: 14rem;
+        border: .1rem solid @grayBorder;
+        padding: .4rem;
+        box-sizing: border-box;
+        margin: 0 auto 2rem;
+    }
+    &__image {
+        max-width: 20rem;
+        max-height: 13rem;
+        display: block;
+        margin: 0 auto;
+    }
+    &__header {
+        .fontLineSize(1.4rem,1.7rem);
+        margin: 0 0 1.4rem 0;
+    }
+    &__content {
+        .fontLineSize(1.3rem,2.1rem);
+    }
+    &__readMore {
+        .readMore;
+    }
+}
 
 .b-footer {
     height: 31rem;
@@ -247,11 +313,7 @@ html {
         line-height: 1.9rem;
     }
     &__readMore {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        color: @greenColor;
-        text-align: right;
-        margin-top: .7rem;
+        .readMore;
     }
 }
 .b-submitForm {
